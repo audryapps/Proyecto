@@ -1,5 +1,7 @@
 {
   "name": "tasking",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
