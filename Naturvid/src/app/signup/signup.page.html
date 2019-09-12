@@ -1,28 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Iniciar Sesión</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-  <form #f="ngForm" (ngSubmit)="onSignup(f)">
-    <ion-list>
-
-      <ion-item>
-        <ion-label fixed>
-          Ingresa tu correo
-        </ion-label>
-        <ion-input type="email" ngModel name="email" required></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label fixed>
-          Ingresa tu contraseña
-        </ion-label>
-        <ion-input type="password" ngModel name="password" required [minlength]="6"></ion-input>
-      </ion-item>
-
-    </ion-list>
-    <button ion-button block type="submit" [disabled]="!f.valid">Ingresa</button>
-  </form>
-</ion-content>
+    <ion-toolbar>
+      <ion-title> Iniciar Sesión</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+    <ion-content padding>
+  
+      <ion-input required="true" type="email" placeholder="Ingresa tu correo" [(ngModel)]="fireDB.correo"></ion-input>
+  
+      <ion-input required="true" type="password" placeholder="Ingresa tu contraseña" [(ngModel)]="fireDB.password"></ion-input>
+  
+      <ion-button (click)="fireDB.crearCuenta()">
+        Registrate
+      </ion-button>
+  
+      <ion-button (click)="fireDB.Login()">
+        Ingresa
+      </ion-button>
+  
+      <ion-button (click)="fireDB.recuperarClave()">
+        Olvidaste tu contraseña
+      </ion-button>
+  
+    </ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content padding>
+
+    <ion-input required="true" type="email" placeholder="Ingresa tu correo" [(ngModel)]="fireDB.correo"></ion-input>
+
+    <ion-input required="true" type="password" placeholder="Ingresa tu contraseña" [(ngModel)]="fireDB.password"></ion-input>
+
+    <ion-button (click)="fireDB.crearCuenta()">
+      Registrate
+    </ion-button>
+
+    <ion-button (click)="fireDB.Login()">
+      Ingresa
+    </ion-button>
+
+    <ion-button (click)="fireDB.recuperarClave()">
+      Olvidaste tu contraseña
+    </ion-button>
+
+  </ion-content>

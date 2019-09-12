@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+         <ion-input type="text" placeholder="Escribe tu nombre" [(ngModel)]="fireDB.nombre"></ion-input>
+        </ion-title>
+        <ion-button (click)="fireDB.cerrarSesion()" slot="end">Cerrar Sessión</ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  
+  
+  <ion-card *ngFor="let mensaje of fireDB.mensajes" 
+  [style.border-color]="fireDB.nombre == mensaje.nombre ? '#000' : '#FF334C'" 
+  [style.background-color]="fireDB.nombre == mensaje.nombre ? '#FFF' : '#000'" 
+  [style.color]="fireDB.nombre == mensaje.nombre ? '#E9FF33' : '#33F6FF'" class="ion-padding">
+
+    <ion-chip>
+      <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <h4> {{mensaje.nombre | titlecase}} dice: </h4> <br>    
+    </ion-chip>
+    
+   <h3> {{mensaje.mensaje}} </h3> <br>
+   <ion-card-content class="ion-text-right">
+    {{mensaje.hora | date:'shortTime'}}
+  </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item>
+      <ion-input type="text" placeholder = "Escribe tu mensaje" [(ngModel)]="fireDB.mensaje" (keyup.enter)="fireDB.escribirDB()"></ion-input>
+      <ion-button (click)="fireDB.escribirDB()">
+        <ion-icon slot="icon-only" name="send"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
