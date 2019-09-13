@@ -1,0 +1,38 @@
+.back{
+    --background: #a90f4dde;
+}
+ion-title{
+    color:#fff;
+   
+}
+
+ion-input{
+    color:#dbb2bb;
+}
+
+ion-item{
+    color: none;
+}
+
+ion-button{
+    --background: #8e043c;
+}
+
+ion-grid{
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.log{
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin:50px auto;
+    margin-top: 20px;
+    
+    
+  }

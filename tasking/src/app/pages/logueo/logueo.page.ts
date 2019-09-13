@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FireDBService} from '../Servicios/fire-db.service'
+import {FireDBService} from '../../Servicios/fire-db.service'
 
 @Component({
   selector: 'app-logueo',

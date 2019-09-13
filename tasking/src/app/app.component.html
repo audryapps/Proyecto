@@ -1,6 +1,26 @@
 <ion-app>
-  <ion-router-outlet>
-    <div class="sk-cube-grid">
+
+    <ion-menu side="start" menuId="first" contentId="content">
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-title>Start Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <ion-item>Menu Item</ion-item>
+            <ion-item>Menu Item</ion-item>
+            <ion-item>Menu Item</ion-item>
+            <ion-item>Menu Item</ion-item>
+            <ion-item>Menu Item</ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+
+     
+
+  <ion-router-outlet id="content">
+ <div class="sk-cube-grid">
       <div class="sk-cube sk-cube1"></div>
       <div class="sk-cube sk-cube2"></div>
       <div class="sk-cube sk-cube3"></div>
