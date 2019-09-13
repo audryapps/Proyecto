@@ -1,5 +1,9 @@
+.backe{
+  --background: transparent;
+}
+
 ion-app{
-    background-color: #a90f4d;
+    background-color: #35d0c3;
 }
 
 .sk-cube-grid {
@@ -63,3 +67,5 @@ ion-app{
               transform: scale3D(0, 0, 1);
     } 
   }
+
+  
