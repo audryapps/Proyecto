@@ -70,11 +70,11 @@ verSesion(){
       console.log("Id:", user.uid);
       console.log("nombre" , user.displayName);
       console.log(user);
-      this.router.navigate(['/home'])
+      this.router.navigate(['/menu'])
 
     } else {
       console.log("Ningun usuario esta logeado")
-      this.router.navigate(['/logueo'])
+      this.router.navigate(['/menu'])
 
     }
   });

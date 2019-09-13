@@ -1,9 +1,13 @@
+
 <ion-header>
-    <ion-toolbar class="back">
-      <ion-title class="ion-text-center" >Registro</ion-title>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Registro</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
+  <ion-content padding>
       <img  style="align-items: center"class="log" alt="logo" height="100"   src="../assets/images/logo.png" > 
     <form #form="ngForm" (ngSubmit)="login(form)">
       <ion-grid>

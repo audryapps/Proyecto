@@ -7,28 +7,25 @@ import { IonicModule } from '@ionic/angular';
 
 import { MenuPage } from './menu.page';
 
+
 const routes: Routes = [
+
+ 
   {
-    path: '',
-    redirectTo: '/menu/home',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
+    path: 'menu',
     component: MenuPage,
     children: [
       {
-        path: 'home',
-        loadChildren: '../home/home.module#HomePageModule'
-      },
-      {
-        path: 'logueo',
-        loadChildren: '../logueo/logueo.module#LogueoPageModule'
-      },
-      {
-        path: 'registro',
-        loadChildren: '../registro/registro.module#RegistroPageModule'
-      }
+       path: 'registro',
+        loadChildren: '../registro/registro.module#RegistroPageModule' },
+  { 
+    path: 'logueo', 
+    loadChildren: '../logueo/logueo.module#LogueoPageModule' 
+},
+{
+  path:'',
+  redirectTo:'menu/logueo'
+},
     ]
   }
 ];
