@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import{Router, Route, RouterEvent} from '@angular/router';
-
-
+import { Component } from '@angular/core';
+import{Router, RouterEvent} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.page.html',
   styleUrls: ['./menu.page.scss'],
 })
-export class MenuPage implements OnInit {
+export class MenuPage  {
   pages=[
     
     {
@@ -30,7 +28,6 @@ this.selectedPath = event.url;
 
   }
 
-  ngOnInit() {
-  }
+  
 
 }

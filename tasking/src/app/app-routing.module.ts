@@ -4,7 +4,9 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'menu', pathMatch: 'full' },
   { path: '', loadChildren: './pages/menu/menu.module#MenuPageModule' },
- 
+  
+
+  
   
 ];
 
@@ -14,5 +16,6 @@ const routes: Routes = [
   [RouterModule.forRoot(routes)]
   ],
   exports: [RouterModule]
+  
 })
 export class AppRoutingModule { }

@@ -1,3 +1,68 @@
-.center{
+@import url('https://fonts.googleapis.com/css?family=Caveat|Chilanka|Indie+Flower|Open+Sans|Philosopher&display=swap');
+
+$dirty-fog: #b993d6 , #8ca6db;
+
+ion-item{
+    --background:#b993d6, #8ca6db;
+    border-radius: 15px !important;
+    font-size: 1.0em;
+    border: 1px solid #f1f1f1 !important;
+    position: relative;
+    margin: auto;
     text-align: center;
+    
+
+    /* height: 10%; */
+    /* width: 41%; */
+    max-width: 50vw; // this is applying perfectly
+    max-height: 6vh;
+    
 }
+
+
+
+
+
+.center{    
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    
+    
+}
+
+
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    }
+
+ion-button{
+    --background: #35d0c3;
+}
+
+ion-list{
+   background-color: transparent;}
+
+.log{
+    left: 0;
+    right: 0;
+    margin:50px auto;
+    margin-top: 65px;
+    height: 110px;
+    transform: translateY(25%);
+
+}
+
+ .let{
+    font-family: 'Philosopher', cursive;
+    font-size: 18px;
+    }
+
+    .tam{
+        margin-top:30;
+       position: relative;
+    }
+
+    
