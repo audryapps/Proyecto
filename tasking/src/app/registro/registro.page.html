@@ -1,0 +1,27 @@
+
+<ion-content padding>
+  <div>
+      <img class="log"  alt="logo" height="100"   src="../../assets/Imagenes/log.png"  > 
+  </div>
+  <ion-item class="nom">
+    <ion-label position="floating" > Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="name" name="name"></ion-input>
+  </ion-item>
+<br>
+
+<ion-item class="eml">
+<ion-label position="floating" > Correo electrónico</ion-label>
+<ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+</ion-item>
+<br>
+<ion-item class="cont">
+<ion-label position="floating" > Contraseña</ion-label>
+<ion-input  type="password" [(ngModel)]="password" name="password"></ion-input>
+</ion-item>
+<br>
+<div class="cet">
+<ion-button class="btn-reg" expand="block" (click)="OnSubmitRegister()">Registrarse</ion-button>
+<br>
+<p text-center routerLink="/login">Ya tengo cuenta</p>
+</div>
+</ion-content>

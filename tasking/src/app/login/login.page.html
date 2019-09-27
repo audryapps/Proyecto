@@ -1,0 +1,27 @@
+
+
+<ion-content padding>
+    <div>
+        <img class="log"  alt="logo" height="100"   src="../../assets/Imagenes/log.png"  > 
+        <br>
+      </div>
+<br>
+
+  <ion-item class="hei">
+    <ion-label position="floating" > Correo electrónico</ion-label>
+    <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+   </ion-item>
+   <br>
+  <ion-item class="wid">
+    <ion-label position="floating" > Contraseña</ion-label>
+    <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <div class="cent">
+  <ion-button    class="btn-login"(click)="onSubmitLogin()" >Ingresa</ion-button>
+  <br>
+  <br>
+  <p  class="text" text-center routerLink="/registro">Crear cuenta</p>
+</div>
+</ion-content>

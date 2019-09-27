@@ -1,0 +1,52 @@
+/* color de backgroud toda la pagina*/
+
+ion-content {
+   
+    --background: linear-gradient(197deg, rgba(160,32,192,1) 0%, rgba(174,72,199,1) 13.5%, rgba(194,100,218,1) 33.33%, rgba(218,143,237,1) 100%) !important;   
+ }
+
+ /* modificar logo*/
+
+
+.log{
+    margin:auto;
+    display: block;
+    height: 160px;
+    margin-top: 50px;
+}
+
+/* modificar input corr*/
+
+.hei{
+    border:0.05em solid #ffffff;
+    border-radius: 5em;  
+    --background: linear-gradient(197deg, rgba(160,32,192,1) 0%, rgba(174,72,199,1) 13.5%, rgba(194,100,218,1) 33.33%, rgba(218,143,237,1) 100%) !important;  
+}
+
+/* modificar input cont*/
+
+.wid{
+    border:0.05em solid #ffffff;
+    border-radius: 5em;  
+    --background: linear-gradient(197deg, rgba(160,32,192,1) 0%, rgba(174,72,199,1) 13.5%, rgba(194,100,218,1) 33.33%, rgba(218,143,237,1) 100%) !important;  
+}
+
+/* modificar boton*/
+
+
+.btn-login{
+    border:0.05em solid #00c;
+    border-radius: 5em;
+    --background-activated:transparent;
+    width: 160px;
+   
+}
+
+/* centrar btn and p */
+
+
+.cent{
+    text-align: center;
+
+}
+
