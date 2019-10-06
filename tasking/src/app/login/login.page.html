@@ -19,9 +19,12 @@
   <br>
   <br>
   <div class="cent">
-  <ion-button    class="btn-login"(click)="onSubmitLogin()" >Ingresa</ion-button>
+  <ion-button    class="btn-login" (click)="onSubmitLogin()" >Ingresa</ion-button>
   <br>
   <br>
   <p  class="text" text-center routerLink="/registro">Crear cuenta</p>
+  <button ion-button center (click)="facebookLogin()">
+    Log In with Facebook
+  </button>
 </div>
 </ion-content>

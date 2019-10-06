@@ -4,12 +4,15 @@ import { promise } from 'protractor';
 import { Router } from "@angular/router";
 import { AngularFirestore } from "@angular/fire/firestore";
 
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private AFauth : AngularFireAuth, private router : Router, private db : AngularFirestore) { }
+  constructor(private AFauth : AngularFireAuth, private router : Router, private db : AngularFirestore,) { }
+  
 
   login(email:string, password:string){
 

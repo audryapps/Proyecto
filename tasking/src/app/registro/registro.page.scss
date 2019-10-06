@@ -6,11 +6,13 @@ ion-content {
  .log{
     margin:auto;
     display: block;
-    height: 160px;
+    height: 145px;
     margin-top: 40px;
+
 }
 
 .nom{
+    font-size: 15px;
     border:0.05em solid #ffffff;
     border-radius: 5em;  
     --background: linear-gradient(197deg, rgba(160,32,192,1) 0%, rgba(174,72,199,1) 13.5%, rgba(194,100,218,1) 33.33%, rgba(218,143,237,1) 100%) !important;  
